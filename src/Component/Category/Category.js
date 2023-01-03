@@ -1,9 +1,12 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 
 const Category = () => {
+    const hotel=useLoaderData();
+    console.log(hotel);
     return (
         <div>
-            <h1>This is Category</h1>
+            <h5 className='ml-5'>Hotel Category:{hotel.length}</h5>
         </div>
     );
 };

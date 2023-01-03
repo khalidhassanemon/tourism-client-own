@@ -11,7 +11,7 @@ const LeftSIde = () => {
     },[])
     return (
         <div>
-            <h1>Categories Length{categories.length}</h1>
+            <h5>Categories Length{categories.length}</h5>
             {
                 categories.map(category=>
                 <p key={category.id}>
