@@ -14,7 +14,7 @@ const Home = () => {
                 >
                 </HotelSummaryCard>)
             }
-        </div>
+        </div> 
     );
 };
 

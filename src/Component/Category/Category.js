@@ -1,12 +1,21 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import HotelSummaryCard from '../HotelSummaryCard/HotelSummaryCard';
+import Login from '../Login/Login';
 
 const Category = () => {
-    const hotel=useLoaderData();
-    console.log(hotel);
+    const categoryHotel = useLoaderData();
+    // console.log(categoryHotel);
     return (
         <div>
-            <h5 className='ml-5'>Hotel Category:{hotel.length}</h5>
+            <h2>This is Category has news: {categoryHotel.length}</h2>
+            {
+                categoryHotel.map(data => <HotelSummaryCard
+                    key={data._id}
+                    data={data}
+                ></HotelSummaryCard>)
+            }
+
         </div>
     );
 };

@@ -3,6 +3,8 @@ import Category from '../../Category/Category';
 import Home from '../../Home/Home';
 import Main from '../../Layout/Main';
 import Hotel from '../../Hotel/Hotel';
+import Login from '../../Login/Login';
+import Register from '../../Register/Register';
 
 export const routes = createBrowserRouter([
     {
@@ -23,6 +25,14 @@ export const routes = createBrowserRouter([
                 path:'/hotel/:id',
                 element:<Hotel></Hotel>,
                 loader: ({params})=>fetch(`http://localhost:5000/hotel/${params.id}`)
+            },
+            {
+                path:'/login/',
+                element:<Login></Login>
+            },
+            {
+                path:'/register/',
+                element:<Register></Register>
             }
           ]
     }

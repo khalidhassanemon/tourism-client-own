@@ -16,13 +16,14 @@ const HotelSummaryCard = ({ data }) => {
                     style={{height:'50px'}}
                     >
                     </Image>
-                    <div className='-ml-64'>
-                        <p>{architect?.name}</p>
-                        <p className='-mt-4'>{architect?.Opended_date}</p>
+                    <div className='-ml-64 mt-2'>
+                        <p className='mb-0'>{architect?.name}</p>
+                        <p>{architect?.Opended_date}</p>
                         </div>
                     <div className='d-flex'>
-                        <FaAward></FaAward>
+                        <FaAward className='me-2'></FaAward>
                         <FaBookmark></FaBookmark>
+                        
                     </div>
                 </div>
             </Card.Header>
@@ -32,9 +33,9 @@ const HotelSummaryCard = ({ data }) => {
                 <Card.Text className='text-justify'>
                     {
                         details.length > 250 ?
-                            <p>{details.slice(0, 250) + '...'}<Link to={`/hotel/${_id}`}>Read More</Link></p>
+                            <>{details.slice(0, 250) + '...'}<Link to={`/hotel/${_id}`}>Read More</Link></>
                             :
-                            <p>{details}</p>
+                            <>{details}</>
                     }
                 </Card.Text>
                 <Button variant="primary">Go somewhere</Button>
