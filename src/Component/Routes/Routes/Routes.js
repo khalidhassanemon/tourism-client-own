@@ -5,6 +5,9 @@ import Main from '../../Layout/Main';
 import Hotel from '../../Hotel/Hotel';
 import Login from '../../Login/Login';
 import Register from '../../Register/Register';
+import PrivateRoute from '../PrivateRoutes/PrivateRoute';
+import TermsAndConditions from '../../Other/TermsAndConditions/TermsAndConditions';
+import Profile from '../../Others/Profile/Profile';
 
 export const routes = createBrowserRouter([
     {
@@ -23,7 +26,7 @@ export const routes = createBrowserRouter([
             },
             {
                 path:'/hotel/:id',
-                element:<Hotel></Hotel>,
+                element:<PrivateRoute><Hotel></Hotel></PrivateRoute>,
                 loader: ({params})=>fetch(`http://localhost:5000/hotel/${params.id}`)
             },
             {
@@ -33,6 +36,14 @@ export const routes = createBrowserRouter([
             {
                 path:'/register/',
                 element:<Register></Register>
+            },
+            {
+                path:'/terms',
+                element:<TermsAndConditions></TermsAndConditions>
+            },
+            {
+                path:'/profile',
+                element:<PrivateRoute><Profile></Profile></PrivateRoute>
             }
           ]
     }

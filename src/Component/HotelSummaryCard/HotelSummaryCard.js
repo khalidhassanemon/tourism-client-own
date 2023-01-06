@@ -6,7 +6,7 @@ import Image from 'react-bootstrap/Image';
 import { FaAward,FaBookmark, FaStar,FaEye} from "react-icons/fa";
 const HotelSummaryCard = ({ data }) => {
     const { title, _id, architect, total_view, image_url, details,rating } = data;
-    console.log(data);
+    // console.log(data);
     return (
         <Card>
             <Card.Header>
@@ -38,7 +38,7 @@ const HotelSummaryCard = ({ data }) => {
                             <>{details}</>
                     }
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+               
             </Card.Body>
             <Card.Footer className="text-muted d-flex justify-content-between">
                 <div >

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import HotelSummaryCard from '../HotelSummaryCard/HotelSummaryCard';
-import Login from '../Login/Login';
 
 const Category = () => {
     const categoryHotel = useLoaderData();

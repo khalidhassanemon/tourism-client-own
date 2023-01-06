@@ -25,8 +25,8 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="#">Login</Nav.Link>
-                            <Nav.Link href="#">Registration</Nav.Link>
+                            <Nav.Link href="/login">Login</Nav.Link>
+                            <Nav.Link href="/register">Registration</Nav.Link>
                             <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="#">FAQ</NavDropdown.Item>
                                 <NavDropdown.Item href="#">Blog</NavDropdown.Item>
@@ -34,13 +34,13 @@ const Header = () => {
                             </NavDropdown>
                         </Nav>
                         <Nav>
-                            <Nav.Link >
+                            <>
 
                                 {
                                     user?.uid ?
                                         <>
-                                            <span>{user?.displayName}</span>
-                                            <Button className="ml-3 text-muted hover:bg-violet-400" onClick={handleLogOut}>Log out</Button>
+                                            <span className="ml-3 text-muted hover:bg-blue-400 cursor-pointer">{user?.displayName}</span>
+                                            <Button className='ml-4'  onClick={handleLogOut}>Log out</Button>
                                         </>
 
                                         :
@@ -49,8 +49,8 @@ const Header = () => {
                                             <Link to='/register' className='ml-3'>Register</Link>
                                         </>
                                 }
-                            </Nav.Link>
-                            <Nav.Link>
+                            </>
+                            <Link to='/profile'>
                                 {user?.photoURL ?
                                     <Image style={{ height: '40px' }}
                                         roundedCircle src={user?.photoURL}>
@@ -60,7 +60,7 @@ const Header = () => {
                                         <FaUser></FaUser>
                                     </>
                                 }
-                            </Nav.Link>
+                            </Link>
                         </Nav>
                         <div className='d-lg-none d-sm-block'>
                             <LeftSIde></LeftSIde>
