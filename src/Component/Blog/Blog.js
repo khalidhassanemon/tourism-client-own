@@ -10,7 +10,7 @@ const Blog = () => {
             <h1 className='text-center'>What other options I have to implement Authentication</h1>
             <p className='text-center'>Cookie-Based authentication<br></br>
                 Token-Based authentication<br></br>
-                Third party access(OAuth, API-token)<br></br>
+                Third party access(OAuth,API-token)<br></br>
                 OpenId<br></br>
                 SAML<br></br>
             </p>
