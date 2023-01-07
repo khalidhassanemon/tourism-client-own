@@ -17,17 +17,17 @@ export const routes = createBrowserRouter([
             {
                 path:'/',
                 element:<Home></Home>,
-                loader: ()=> fetch(`http://localhost:5000/hotel`)
+                loader: ()=> fetch(`https://tourism-news-server.vercel.app/hotel`)
             },
             {
                 path: '/category/:id',
                 element: <Category></Category>,
-                loader: ({params}) => fetch(`http://localhost:5000/category/${params.id}`)
+                loader: ({params}) => fetch(`https://tourism-news-server.vercel.app/category/${params.id}`)
             },
             {
                 path:'/hotel/:id',
                 element:<PrivateRoute><Hotel></Hotel></PrivateRoute>,
-                loader: ({params})=>fetch(`http://localhost:5000/hotel/${params.id}`)
+                loader: ({params})=>fetch(`https://tourism-news-server.vercel.app/hotel/${params.id}`)
             },
             {
                 path:'/login/',

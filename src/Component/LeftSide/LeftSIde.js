@@ -5,7 +5,7 @@ const LeftSIde = () => {
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/hotel-categories')
+        fetch('https://tourism-news-server.vercel.app/hotel-categories')
             .then(res => res.json())
             .then(data => setCategories(data));
     }, [])
