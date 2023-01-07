@@ -14,15 +14,17 @@ const LeftSIde = () => {
             {
                 categories.map(category =>
 
-                    <p className='mt-2 rounded-lg'
-                    key={category.id}>
+                    <p className='mt-2 bg-slate-800 rounded p-2 pl-4'
+                        key={category.id} >
 
-                        <ListGroup >
-                            <ListGroup.Item><Link variant="outline-success" to={`/category/${category.id}`}>{category.name}</Link></ListGroup.Item>
+                        <ListGroup>
+                            <>
+                                    <Link to={`/category/${category.id}`}>{category.name}</Link>
+                            </>
                         </ListGroup>
                     </p>)
             }
-        </div>
+        </div >
     );
 };
 

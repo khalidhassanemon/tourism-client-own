@@ -22,7 +22,7 @@ const RightSide = () => {
     return (
         <div>
             <ButtonGroup vertical>
-                <Button onClick={handleGoogleSignIn} className='mb-2' variant="outline-primary"><FaGoogle></FaGoogle> Login With Google</Button>
+                <Button onClick={handleGoogleSignIn} className='mb-2 mt-2' variant="outline-primary"><FaGoogle></FaGoogle> Login With Google</Button>
                 <Button className='mb-2' variant="outline-dark"><FaGithub></FaGithub> Login With Github</Button>
             </ButtonGroup>
             <div>
