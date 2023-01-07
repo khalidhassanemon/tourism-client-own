@@ -28,8 +28,8 @@ const Header = () => {
                             <Nav.Link href="/login">Login</Nav.Link>
                             <Nav.Link href="/register">Registration</Nav.Link>
                             <NavDropdown title="Others" id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="#">FAQ</NavDropdown.Item>
-                                <NavDropdown.Item href="#">Blog</NavDropdown.Item>
+                                <NavDropdown.Item href="/faq">FAQ</NavDropdown.Item>
+                                <NavDropdown.Item href="/blog">Blog</NavDropdown.Item>
                                 <NavDropdown.Divider />
                             </NavDropdown>
                         </Nav>

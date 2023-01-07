@@ -8,6 +8,8 @@ import Register from '../../Register/Register';
 import PrivateRoute from '../PrivateRoutes/PrivateRoute';
 import TermsAndConditions from '../../Other/TermsAndConditions/TermsAndConditions';
 import Profile from '../../Others/Profile/Profile';
+import Blog from '../../Blog/Blog';
+import FAQ from '../../Blog/FAQ';
 
 export const routes = createBrowserRouter([
     {
@@ -44,6 +46,14 @@ export const routes = createBrowserRouter([
             {
                 path:'/profile',
                 element:<PrivateRoute><Profile></Profile></PrivateRoute>
+            },
+            {
+                path:'/blog',
+                element:<Blog></Blog>
+            },
+            {
+                path:'/faq',
+                element:<FAQ></FAQ>
             }
           ]
     }
