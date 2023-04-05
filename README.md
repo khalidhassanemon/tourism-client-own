@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Getting Started with Tourism
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with `ReactJs`, `Tailwind component CSS`, `React router DOM`, `Context API` & later hosted the API in `Vercel` server and finally hosted tha app in firebase successfully. Moreoverly,
 
-## Available Scripts
+1. ** I have included Firbase Google Auth Provider as Authentication services for user login along with general Sign in.**
+2. ** Private Routes prevent access through some routes, and access is only permitted after authentication.**
+3. ** All of the data are dynamically displayed and collected from the API using Id in the services route. **
+4.  ** User will get error if the login information doesn't match with authentication provider. **
+5. ** User will get error if the login information doesn't match with authentication provider. **
 
-In the project directory, you can run:
 
-### `npm start`
+## Keywords
+`React-Router-Dom`, `ContextApI`, `Nested-Routes`, `Vercel`,`GoogleAuthProvider`,`Firebase`,`React Query`, `React Hook`  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tourism Repository Links
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Client Side
 
-### `npm test`
+Link: [https://github.com/khalidhassanemon/tourism-client-own](https://github.com/khalidhassanemon/tourism-client-own)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Server Side
 
-### `npm run build`
+Link: [https://github.com/khalidhassanemon/it-service-server-own](https://github.com/khalidhassanemon/it-service-server-own)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+I have used Google Firebase to host the web application.
 
-### `npm run build` fails to minify
+## Tourism Live Link
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Link: [https://magnificent-basbousa-c78421.netlify.app/)
+
+
+## Vercel Link:
+Link:[https://vercel.com/khalidhassanemon/tourism-news-server)
+
+### For category data:
+Link: [https://vercel.com/khalidhassanemon/tourism-news-server](https://vercel.com/khalidhassanemon/tourism-news-server)
+
